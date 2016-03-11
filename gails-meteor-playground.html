@@ -1,0 +1,22 @@
+<head>
+  <title>My Meteor Playground</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor, Dawg!</h1>
+
+  {{> hello}}
+  
+  {{> commentary}}
+</body>
+
+<template name="hello">
+  <button>Click Me, Please</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<template name="commentary">
+  {{#if hundred}}
+    <p>Wow, get a life</p>
+  {{/if}}
+</template>
